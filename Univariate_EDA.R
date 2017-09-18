@@ -76,6 +76,7 @@ summary(data2)  # will show summary of new data frame, including number of NA's 
 
 #####   Section 2: Exploratory Data Analysis, Univariate Descriptive - Numerical   #####
 
+options(scipen=999) #stops scientific notation
 summary(data1)           # for the complete data set
 summary(data1$visits)    # for individual variables
 describe(data1$visits)   # provides expanded statiscal summary, 5 num sum., skew, standard error, etc.
