@@ -76,10 +76,11 @@ summary(data2)  # will show summary of new data frame, including number of NA's 
 
 #####   Section 2: Exploratory Data Analysis, Univariate Descriptive - Numerical   #####
 
-summary(data1)           #for the complete data set
-summary(data1$visits)    #for individual variables
+summary(data1)           # for the complete data set
+summary(data1$visits)    # for individual variables
 describe(data1$visits)   # provides expanded statiscal summary, 5 num sum., skew, standard error, etc.
-stat.desc(data1$visits)  # variance, coeff. of variation, and confidence int. for mean
+stat.desc(data1$visits)  # variance, coeff. of variation, and confidence int. for mean (CI value given, but not applied +- mean)
+t.test(data1$visits, conf.level = 0.95) # use this t.test to get the 95% confidence interval (lower and upper CI given here)
 
 #####   Section 3: Exploratory Data Analysis, Univariate Descriptive - Graphical   #####
 
